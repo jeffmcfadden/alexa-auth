@@ -15,6 +15,6 @@
     = params[:response_type]
   
 - test_access_toke = "ALKJ34pASDLFKJ2434asf23019uj"
-- url = "#{ENV['AUTH_REDIRECT_URL']}?state=#{params[:state]}&access_token=#{ENV['AUTHORIZATION_TOKEN']}&token_type=Bearer"
+- url = "#{ENV['AUTH_REDIRECT_URL']}?state=#{params[:state]}&code=#{ENV['AUTHORIZATION_TOKEN']}"
 
 = link_to url, url
