@@ -1,1 +1,20 @@
 %h1 Auth
+
+%ul
+  %li
+    state=
+    = params[:state]
+  %li
+    client_id=
+    = params[:client_id]
+  %li
+    scope=
+    = params[:scope]
+  %li
+    response_type=
+    = params[:response_type]
+  
+- test_access_toke = "ALKJ34pASDLFKJ2434asf23019uj"
+- url = "#{ENV['AUTH_REDIRECT_URL']}#state=#{params[:state]}&access_token=#{ENV['AUTHORIZATION_TOKEN']}&token_type=Bearer"
+
+= link_to url, url
